@@ -8,7 +8,7 @@ const Create = () => {
     const [description, setDescription] = useState("")
 
     const navigate = useNavigate()
-
+    console.log('')
     const handleSubmit = (e) => {
         e.preventDefault()
         axios.post('http://localhost:8000/api/products/new', {title, price, description})
